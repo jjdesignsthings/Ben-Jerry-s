@@ -1,0 +1,618 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fab303;;
+  }
+
+  
+@font-face {
+    font-family: jalnan;
+    src: url(../font/Jalnan.ttf);
+}
+
+html{font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px; 
+}
+
+.moblieOnly{
+    display: none;
+}
+
+.innerFrame{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 헤더 */
+header {
+    width: 1200px;
+    margin: 0 auto;
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 600px);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100px;
+    padding-top: 50px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 25px;
+    transition: all .6s ease 0s;
+    z-index: 777;
+    box-shadow: 0 0 17px rgba(0,0,0,0.1);
+}
+header.on{
+    height: 430px;
+}
+
+.gnb1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    width: 300px;
+    height: 100px;
+    padding-left: 50px;
+    position: absolute;
+    top: 0;
+    left: auto;
+}
+
+.gnb1>li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 120px;
+}
+
+.gnb1>li>a.on{
+    color: #fab303;
+}
+
+.insideMenu, .insideMenu2, .insideMenu3{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: flex;
+    width: 1200px;
+    justify-content: space-evenly;
+    border-top:  1px solid rgba(0, 0, 0, 0.03);
+    padding: 15px 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s ease 0s;
+}
+
+.gnb1>li:hover>div{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menuList{
+    width: 350px;
+}
+
+.menuList>li{
+    font-family: "jalnan";
+    font-size: 35px;
+    padding: 10px 7px;
+}
+
+
+.menuList>li:first-of-type{
+    color: #fab303;
+    font-size: 1rem;
+    font-family: 'Noto Sans KR';
+    padding: 10px 0;
+}
+
+.menuList>li>a:hover{
+    color: #fab303;
+}
+
+
+.insideMenu figure, .insideMenu2 figure, .insideMenu3 figure{
+    position: relative;
+}
+
+.insideMenu figure>img, .insideMenu2 figure>img, .insideMenu3 figure>img{
+    height: 294px; width: 388px;
+}
+
+
+.insideMenu figure>figcaption, .insideMenu2 figure>figcaption, .insideMenu3 figure>figcaption{
+    position: absolute;
+    top: calc(50%);
+    left: 40px;
+    font-family: "jalnan";
+    font-size: 35px;
+    color: white;
+    z-index: 777;
+    line-height: 1.2;
+    transform: translateY(-50%);
+}
+
+.insideMenu figure>span>a, .insideMenu2 figure>span>a, .insideMenu3 figure>span>a{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    color: white;
+    background: #fab303;
+    width: 125px;
+    height: 45px;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 777;
+}
+
+
+.insideMenu figure>span>a:hover, .insideMenu2 figure>span>a:hover, .insideMenu3 figure>span>a:hover{
+    background-color: white;
+    border: 1px solid #fab303;
+    color: #fab303;
+}
+
+
+
+nav figure::after{
+    content: "";
+    position: absolute;
+    width: 388px;
+    height: 294px;
+    top:0px;
+    left: 0;
+    background:rgba(0, 0, 0, 0.333);
+}
+
+.nav2 figure::after{
+    content: "";
+    position: absolute;
+    width: 388px;
+    height: 294px;
+    top:0px;
+    left: 0;
+    background:rgba(0, 0, 0, 0.333);
+}
+
+
+.gnb2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    width: 300px;
+    height: 100px;
+    padding-right: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+
+.gnb2>li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 120px;
+}
+
+.gnb2>li>a.on{
+    color: #fab303;
+}
+
+.insideMenu4, .insideMenu5, .insideMenu6{
+    position: absolute;
+    top: 100px;
+    left: -849px;
+    display: flex;
+    width: 1200px;
+    justify-content: space-evenly;
+    border-top:  1px solid rgba(0, 0, 0, 0.03);
+    padding: 15px 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s ease 0s;
+}
+
+
+.gnb2>li:hover>div{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.insideMenu4 figure, .insideMenu5 figure{
+    position: relative;
+}
+
+.insideMenu4 figure, .insideMenu5 figure{
+    position: relative;
+}
+
+.insideMenu4 figure>img, .insideMenu5 figure>img{
+    height: 294px; width: 388px;
+}
+
+.insideMenu4 figure>figcaption, .insideMenu5 figure>figcaption{
+    position: absolute;
+    top: calc(50%);
+    left: 40px;
+    font-family: "jalnan";
+    font-size: 35px;
+    color: white;
+    z-index: 777;
+    line-height: 1.2;
+    transform: translateY(-50%);
+}
+
+.insideMenu4 figure>span>a, .insideMenu5 figure>span>a{
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    color: white;
+    background: #fab303;
+    width: 125px;
+    height: 45px;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 777;
+}
+
+.insideMenu4 figure>span>a:hover, .insideMenu5 figure>span>a:hover{
+    background-color: white;
+    border: 1px solid #fab303;
+    color: #fab303;
+}
+
+.logo{
+    width: 210px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 105px);
+    pointer-events: none;
+}
+
+
+
+.insideMenu6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.insideMenu6 fieldset{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 33px;
+}
+
+.insideMenu6 fieldset input{
+    width: 600px;
+    height: 50px;
+    border: 1px solid #fab303;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.insideMenu6 fieldset button{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: none;
+}
+
+.search_top{
+    width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search_top>*{
+    height: 40px;
+    border: 1px solid #fab303;
+    box-sizing: border-box;
+    border-radius: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 19px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_top>*:hover{
+    background-color: #fab303;
+    color: white;
+}
+
+.insideMenu6 label{
+    font-size: 0;
+}
+
+
+
+/* 배너 */
+
+.sort{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(180deg, #FBAB7E 0%, #fab303 33%, #ffffff 93%);
+    
+}
+
+.sort>img{
+    transform: translateY(70px);
+    scale: 88%;
+}
+.sort>h2{
+    font-family: "jalnan";
+    font-size: 40px;
+    color: #7b7669;
+    margin: 40px 0;
+}
+
+.sortList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sortList>li>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sortList>li>a>*{
+    margin: 10px;
+}
+
+.sortList img{
+    width: 130px;
+    object-fit: cover;
+}
+
+/* 리스트타이틀 */
+.itemTitle{
+    height: 100px;
+    /* background: #fab303; */
+    margin: 45px 0;
+}
+
+.itemTitle>.innerFrame>section{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.itemTitle h2{
+    font-family: 'jalnan';
+    font-size: 30px;
+    color: white;
+
+}
+
+/* 리스트 */
+
+
+.itemBorder{
+    border: 1px solid orange;
+    height: 285px;
+    width: 285px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.itemBorder img{
+    width: 150px;
+    height: 190px;
+    object-fit: contain;
+    transform: translateY(40px);
+}
+
+.itemBorder span{
+    margin: 0 3px;
+    width: 235px;
+    height: 45px;
+    background: #fab303;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+.showItem{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 350px;
+    box-sizing: border-box;
+}
+.showItem>*{
+    margin: 10px 0;
+}
+
+.itemInfo{
+    width: 285px;
+    height: 150px;
+    padding-left: 15px;
+}
+
+.itemInfo>*{
+    margin: 5px 0;
+}
+.itemInfo span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
+    height: 22px;
+}
+
+.itemInfo h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.itemInfo p {
+    font-size: 16px;
+    width: 255px;
+    min-height: 23.75px;
+}
+
+
+
+
+/* 푸터 */
+
+
+footer{background: #666666; position: relative;height: 510px;}
+.ftrBg {
+    background: url(../img/footerbg.png) no-repeat 50% 0 /contain;
+    color: white;
+    height: 440px;
+    position: absolute;
+    width: 100%;
+    top: -96px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 159px;
+}
+
+.ftr1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+}
+
+.ftr1Right{
+    width: 370px;
+    margin-bottom: 60px;
+    transform: translateY(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftr1Right>*{
+    display: inline-block;
+}
+
+.ftr1Right .fb{
+    scale: 90%;
+}
+
+.ftr1Right>section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftr1Right>section>span{
+    margin-right: 10px;
+}
+
+fieldset{
+    border: 0;
+    width: 150px;
+}
+
+.country{
+    width: 140px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    padding: 0 5px;
+
+    background: #666666;
+    color: white;
+}
+.country:focus{
+    border: 2px solid #fab303;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+.ftr2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftrList{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'jalnan';
+    font-size: 21px;
+    width: 580px;
+    margin: 20px 0;
+}
+
+.ftrList>li:hover{
+    color: #feb303;
+}
+
+.ftr2 p{
+    font-weight: 200;
+}
+
+.ftr2 img{
+    transform: translateX(-20px);
+}
+
+.ftrBtm{
+    height: 7px;
+    width: 100%;
+    background: #fab303;
+}
+
